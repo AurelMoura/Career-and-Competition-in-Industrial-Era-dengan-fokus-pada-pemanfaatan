@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d132540410d37c25e4bb425646f21e9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d132540410d37c25e4bb425646f21e9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d132540410d37c25e4bb425646f21e9b = L.map(
+                "map_d132540410d37c25e4bb425646f21e9b",
+                {
+                    center: [-3.8025, 102.265625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5c290cd435f85d708ff3ce3e37c392c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f5c290cd435f85d708ff3ce3e37c392c.addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var marker_ef9b33850033ce2785723a47552a9013 = L.marker(
+                [-3.8, 102.265],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_5d9dbc183535bb38e9b68227c20341d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbb6fd54a36ebfad3b44ec6c7a9ba6a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a50f9fe710adbf72294adf9bef39c5a5 = $(`<div id="html_a50f9fe710adbf72294adf9bef39c5a5" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas A<br>Kategori: Sekolah<br><b>Data simulasi</b></div>`)[0];
+                popup_fbb6fd54a36ebfad3b44ec6c7a9ba6a4.setContent(html_a50f9fe710adbf72294adf9bef39c5a5);
+            
+        
+
+        marker_ef9b33850033ce2785723a47552a9013.bindPopup(popup_fbb6fd54a36ebfad3b44ec6c7a9ba6a4)
+        ;
+
+        
+    
+    
+            marker_ef9b33850033ce2785723a47552a9013.bindTooltip(
+                `<div>
+                     Fasilitas A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef9b33850033ce2785723a47552a9013.setIcon(icon_5d9dbc183535bb38e9b68227c20341d1);
+            
+    
+            var marker_4bd062388cba77ff62fa557135e072a0 = L.marker(
+                [-3.805, 102.27],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_d1ffee7f2af1d3904f0a98eb37b836a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b18934358a9e5d56054204e371e3e8c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f796801f2a468d196c88f3ad1b59dd5 = $(`<div id="html_1f796801f2a468d196c88f3ad1b59dd5" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas B<br>Kategori: Rumah Sakit<br><b>Data simulasi</b></div>`)[0];
+                popup_b18934358a9e5d56054204e371e3e8c6.setContent(html_1f796801f2a468d196c88f3ad1b59dd5);
+            
+        
+
+        marker_4bd062388cba77ff62fa557135e072a0.bindPopup(popup_b18934358a9e5d56054204e371e3e8c6)
+        ;
+
+        
+    
+    
+            marker_4bd062388cba77ff62fa557135e072a0.bindTooltip(
+                `<div>
+                     Fasilitas B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bd062388cba77ff62fa557135e072a0.setIcon(icon_d1ffee7f2af1d3904f0a98eb37b836a0);
+            
+    
+            var marker_5c3e1b025f2f015dfb66d5d64911de11 = L.marker(
+                [-3.79, 102.255],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_6790a11fc3af5f314a320728dea34487 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ae2388c1375f8a08ee0206f1c08f269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4fa35cf4f44861b037f7a20d015c5ec = $(`<div id="html_b4fa35cf4f44861b037f7a20d015c5ec" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas C<br>Kategori: Tempat Ibadah<br><b>Data simulasi</b></div>`)[0];
+                popup_9ae2388c1375f8a08ee0206f1c08f269.setContent(html_b4fa35cf4f44861b037f7a20d015c5ec);
+            
+        
+
+        marker_5c3e1b025f2f015dfb66d5d64911de11.bindPopup(popup_9ae2388c1375f8a08ee0206f1c08f269)
+        ;
+
+        
+    
+    
+            marker_5c3e1b025f2f015dfb66d5d64911de11.bindTooltip(
+                `<div>
+                     Fasilitas C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c3e1b025f2f015dfb66d5d64911de11.setIcon(icon_6790a11fc3af5f314a320728dea34487);
+            
+    
+            var marker_a88895c20acc5c2c75b81190bee7374c = L.marker(
+                [-3.815, 102.26],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_8b9939f0cf39684053d16ca7a90b25f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c718805f1510e15d854bca038d6bd00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beaa55e4988118bea787108df24a44ca = $(`<div id="html_beaa55e4988118bea787108df24a44ca" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas D<br>Kategori: Sekolah<br><b>Data simulasi</b></div>`)[0];
+                popup_6c718805f1510e15d854bca038d6bd00.setContent(html_beaa55e4988118bea787108df24a44ca);
+            
+        
+
+        marker_a88895c20acc5c2c75b81190bee7374c.bindPopup(popup_6c718805f1510e15d854bca038d6bd00)
+        ;
+
+        
+    
+    
+            marker_a88895c20acc5c2c75b81190bee7374c.bindTooltip(
+                `<div>
+                     Fasilitas D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a88895c20acc5c2c75b81190bee7374c.setIcon(icon_8b9939f0cf39684053d16ca7a90b25f9);
+            
+    
+            var marker_caacb61ac39a4358363ec62fb825e096 = L.marker(
+                [-3.795, 102.28],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_c24d6097bf4859e8ef07eabe1188f3d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bd1d8d5bd80fd10ed80edea36c1ffba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a238415de02e17e38b986d8fad90aaaa = $(`<div id="html_a238415de02e17e38b986d8fad90aaaa" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas E<br>Kategori: Ruang Publik<br><b>Data simulasi</b></div>`)[0];
+                popup_0bd1d8d5bd80fd10ed80edea36c1ffba.setContent(html_a238415de02e17e38b986d8fad90aaaa);
+            
+        
+
+        marker_caacb61ac39a4358363ec62fb825e096.bindPopup(popup_0bd1d8d5bd80fd10ed80edea36c1ffba)
+        ;
+
+        
+    
+    
+            marker_caacb61ac39a4358363ec62fb825e096.bindTooltip(
+                `<div>
+                     Fasilitas E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_caacb61ac39a4358363ec62fb825e096.setIcon(icon_c24d6097bf4859e8ef07eabe1188f3d5);
+            
+    
+            var marker_fc599ed021a0cdf83270529480953582 = L.marker(
+                [-3.81, 102.25],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_3940c7ebc030d46d93fcf7ac9df4cf90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ab06667d6c1fa4658c7d9380511f394 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_209914eba693a38d1309842455b5bfd0 = $(`<div id="html_209914eba693a38d1309842455b5bfd0" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas F<br>Kategori: Rumah Sakit<br><b>Data simulasi</b></div>`)[0];
+                popup_4ab06667d6c1fa4658c7d9380511f394.setContent(html_209914eba693a38d1309842455b5bfd0);
+            
+        
+
+        marker_fc599ed021a0cdf83270529480953582.bindPopup(popup_4ab06667d6c1fa4658c7d9380511f394)
+        ;
+
+        
+    
+    
+            marker_fc599ed021a0cdf83270529480953582.bindTooltip(
+                `<div>
+                     Fasilitas F
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc599ed021a0cdf83270529480953582.setIcon(icon_3940c7ebc030d46d93fcf7ac9df4cf90);
+            
+    
+            var marker_801afa9ddd3e214602e5574faa5eef58 = L.marker(
+                [-3.785, 102.275],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_5fb705299c9f349466ad812a5f4cdedf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57e4ddc0d441f377b97a91d3944144fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e81a7b6b605b9f3f3de547788a3e6d7 = $(`<div id="html_9e81a7b6b605b9f3f3de547788a3e6d7" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas G<br>Kategori: Sekolah<br><b>Data simulasi</b></div>`)[0];
+                popup_57e4ddc0d441f377b97a91d3944144fb.setContent(html_9e81a7b6b605b9f3f3de547788a3e6d7);
+            
+        
+
+        marker_801afa9ddd3e214602e5574faa5eef58.bindPopup(popup_57e4ddc0d441f377b97a91d3944144fb)
+        ;
+
+        
+    
+    
+            marker_801afa9ddd3e214602e5574faa5eef58.bindTooltip(
+                `<div>
+                     Fasilitas G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_801afa9ddd3e214602e5574faa5eef58.setIcon(icon_5fb705299c9f349466ad812a5f4cdedf);
+            
+    
+            var marker_ac841c58988a750ecc0fe789a39b4f91 = L.marker(
+                [-3.82, 102.27],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var icon_d86f50643dec4dadacbab8df27584164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b6f623c81908dd5555ac86ac4e520b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb44439ff6d2fb8c4da39e5547fd3594 = $(`<div id="html_cb44439ff6d2fb8c4da39e5547fd3594" style="width: 100.0%; height: 100.0%;">Nama: Fasilitas H<br>Kategori: Ruang Publik<br><b>Data simulasi</b></div>`)[0];
+                popup_3b6f623c81908dd5555ac86ac4e520b1.setContent(html_cb44439ff6d2fb8c4da39e5547fd3594);
+            
+        
+
+        marker_ac841c58988a750ecc0fe789a39b4f91.bindPopup(popup_3b6f623c81908dd5555ac86ac4e520b1)
+        ;
+
+        
+    
+    
+            marker_ac841c58988a750ecc0fe789a39b4f91.bindTooltip(
+                `<div>
+                     Fasilitas H
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac841c58988a750ecc0fe789a39b4f91.setIcon(icon_d86f50643dec4dadacbab8df27584164);
+            
+    
+            var marker_8e7cf77ca097cfb08f8fd9f9ff18e69f = L.marker(
+                [-3.8025, 102.265625],
+                {
+}
+            ).addTo(map_d132540410d37c25e4bb425646f21e9b);
+        
+    
+            var div_icon_9d60a30e1ac10bdd7e4620e61723dbd9 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            font-size: 14px;\n            font-weight: bold;\n            background: white;\n            padding: 6px;\n            border: 1px solid gray;\n        \"\u003e\n        DATA SIMULASI - BUKAN LOKASI NYATA\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_8e7cf77ca097cfb08f8fd9f9ff18e69f.setIcon(div_icon_9d60a30e1ac10bdd7e4620e61723dbd9);
+            
+</script>
+</html>
